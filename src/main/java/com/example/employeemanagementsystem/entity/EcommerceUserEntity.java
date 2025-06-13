@@ -5,15 +5,14 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
+@Table(name="User")
 @Entity
-@Table(name="user_details")
-public class UserDetailsEntity {
+public class EcommerceUserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
-    public String userName;
-    public String userEmail;
-    public Long userDOB;
+    private String email;
+    private String password;
+    private String role;
 
 }
