@@ -12,7 +12,7 @@ public class userEntityAuthentication {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
-    private String Username;
-    private String Password;
-    private String Role;
+    private String userName;
+    private String passWord;
+    private String role;
 }
